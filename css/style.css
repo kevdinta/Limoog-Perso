@@ -1,0 +1,896 @@
+body {
+    margin:0;
+    font-family: Helvetica, Arial;
+    background-image: url('../img/fond-site.jpg');
+    background-size: 100% 100%;
+}
+#search_bilan_cpt {
+    float: right;
+}
+#ensemble_creer_epreuve {
+    text-align: center;
+}
+#search_bilan_cpt_cell {
+    height: 40px;
+}
+.title {
+    width:100%;
+    height:40px;
+    padding-top:15px;
+    background-image: url('../img/Limoog.png');
+    background-repeat:no-repeat;
+    margin:auto;
+    color:white;
+    text-align:center;
+    font-size:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    border: solid 1px;
+    background-position:50% 0%; 
+}
+
+nav{ 
+    margin:auto;
+    width:960px;
+    height:50px;
+    background-color:#78c018;
+    border-bottom:2px solid black;
+    border: solid 1px black;
+    border-radius: 10px 10px 0px 0px;
+}
+article {
+    margin:auto;
+    width:960px;
+    height:100%;
+    background: rgba(238,238, 238, 0.8);
+    padding-top:20px;
+}
+.onglet{
+    padding-top:15px;
+    height:35px;
+    width:319px;
+    float:left;
+    text-align:center;
+    color:black;
+    font-size:14px;
+    line-height:17px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+}
+.onglet:hover {
+    background-color:#69d034;
+}
+.onglet:hover .ongletDrop{
+    display:block;
+}
+.ongletDrop {
+    margin-left:-1px;
+    margin-top:18px;
+    height:100px;
+    width:319px;
+    text-align:center;
+    background-color:#78c018;
+    display:none;
+    position:relative;
+}
+.ongletDrop a {
+    text-decoration:none;
+    float:left;
+    padding-top:15px;
+    height:35px;
+    width:319px;
+    color:black;
+    font-size:14px;
+    line-height:17px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+    border-right:1px solid black;
+    border-left:1px solid black;
+    border-bottom: 1px solid black;
+    background-color:#78c018;
+}
+#consulterMoyenne {
+    border-top: 1px solid black;
+}
+#listeDesEpreuves {
+    border-top: 1px solid black;
+}
+.ongletDrop a:hover {
+    background-color:#69d034;
+}
+.hr{
+    height:100%;
+    width:0px;
+    border-right:solid 1px black;
+    float:left;
+}
+.welcome{
+    width:auto;
+    padding-top:25px;
+    height:50px;
+    margin:auto;
+    color:black;
+    font-size:30px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+    line-height:32px;
+    text-align:center;
+    border:1px solid black;
+    border-radius:5px;
+}
+div.bordure {
+    border-bottom:1px solid black;
+}
+a {
+    text-decoration:none;
+    color:black;
+    font-weight:normal;
+}
+.menu_eval a {
+    text-decoration:none;
+    color:white;
+    font-weight:normal;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+.select_eleve_cpt {
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    outline : none;
+}
+.button_envoyer {
+    height: 5%;
+    width: auto;
+    text-align: center;
+}
+#discipline {
+    width: 100%;
+}   
+#competence {
+    width: 100%;
+}
+input[type=radio] {
+    width: 100%;
+}
+#date {
+    float: right;
+    text-align: center;
+}
+.select_epreuve {
+    width: 100%;
+}
+.menu_bilan {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+#tableau {
+    word-spacing: 20px;
+}
+#actualiser {
+    float: right;
+}
+th 
+{
+    background-color:#1ABC9C;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    font-family: Lucida Sans;
+}
+
+td 
+{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+table tr:nth-child(odd) td
+{
+    background-color: whitesmoke;
+}
+.enregistrer {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    width: 15%;
+    height: 4%;
+    outline:0; 
+}
+.enregistrer:hover{
+    color: #aaa;
+    background: black;
+    outline:0; 
+}
+.supprimer {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    width: 15%;
+    height: 4%;
+    outline:0; 
+}
+.supprimer:hover{
+    color: #aaa;
+    background: black;
+    outline:0; 
+}
+.form_txt {
+    text-align: center;
+}
+label {
+    border-radius: 5px;
+}
+#footer {
+    border-radius: 8px;
+    text-align: center;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    background: black;
+    color: white;
+}
+.date_form1 {
+    position: relative;
+    left: 40%;
+}
+.epreuve {
+    position: relative;
+    left: 30%;
+}
+.classe {
+    position: relative;
+    left: 38.1%;
+}
+.matiere {
+    position: relative;
+    left: 37.5%;
+}
+.cpt {
+    position: relative;
+    left: 32.5%;
+}
+#date_form {
+    width: 18.5%;
+}
+.classe_select {
+    width: 18.8%;
+}
+.matiere_s {
+    width: 19%;
+}
+.competences_s {
+    width: 19.1%;
+}
+#iId {
+    float: right;
+}
+.select_class_cpt {
+    width:100%;
+}
+#search_cpt {
+    float: right;
+}
+#cpt {
+    text-align: center;
+}
+#liste_epreuve_tab th {
+    width: 100%;
+    height: 50px;
+}
+#liste_epreuve_tab td {
+    width:20%;
+}
+#search_epreuve {
+    text-align: center;
+}
+.liste_epreuve {
+    text-align: center;
+}
+.img_epreuve {
+    text-align: center;
+}
+#cell_search {
+    height: 35px;
+}
+.espacer {
+    height: 5%;
+}
+#cpt_tab_moy {
+    text-align: right;
+}
+.tabCompetenceMoy {
+    width: 70%;
+}
+.cell_note {
+    width: 10%;
+}
+.tab_Prepa_Cpt th {
+    width: 50%;
+}
+.tab_Prepa_Fill td {
+    width: 10%;
+}
+#icon_prepa {
+    float: right;
+}
+#bouton_tab_prepa {
+    text-align: center;
+}
+.cell_tab_cpt {
+    width: auto;
+    height: 500px;
+    overflow: scroll;
+}
+.checkbox_right {
+    float: right;
+}
+.menu_eval {
+    border: 1px solid #696;
+    text-align: center; 
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #77CDAA;
+    color: black;
+}
+.footer {
+    margin: auto;
+    width:960px;
+    border: solid 1px black;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Lucida Sans, Helvetica, Arial;
+    background: #78c018;
+}
+.menu-vertical { 
+    margin: auto;
+    width: auto;
+    list-style: none;
+}
+.href_menu_epreuve, .href_menu_epreuve a {
+    display: block;
+}
+.href_menu_epreuve a {
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s; 
+    transition: all .3s;
+    margin: auto;
+}
+.href_menu_epreuve a:hover {
+    background: #78c018;
+    color: white;
+    padding-left: 30px; /* décalage du contenu de 10px vers la droite (30-20 = 10) */
+}
+select {
+    border: 1px solid black;
+    border-radius: 2px 2px 0px 0px;
+    outline-style: none;
+}
+input[type="search"] {
+    outline-style: none;
+}
+#fieldset_moy {
+    font-family: Lucida Sans;
+    font-size: 10px;
+}
+#tabComparaisonApprenant th {
+    font-size: 15px;
+    font-family: Arial;
+}
+#total_tab th {
+    font-size: 15px;
+    font-family: Arial;
+}
+input[type="submit"] {
+    border: 1px solid #ccc;
+    outline-style: none;
+    border-radius: 28px;
+    padding: 10px;
+    font-family: Lucida Sans, Helvetica, Arial;
+    background: #1ABC9C;
+    color: whitesmoke;
+}
+input[type="submit"]:hover {
+    background: #69d034;
+    cursor:pointer;
+}
+#NonAcquis_Th, #EnCoursDacquisition_Th, #PresqueAcquis_Th, #Acquis_Th {
+    width: 20%;
+}
+.NonAcquisCpt:before {
+    content: 'Non acquis';
+}
+.EnCoursDacquisitionCpt:before {
+    content:"En cours d'acquisition";
+}
+.PresqueAcquisCpt:before {
+    content: "Presque Acquis";
+}
+.AcquisCpt:before {
+    content: "Acquis";
+}
+.th_apprenant:before {
+    content: "Apprenant"
+}
+.th_intervenant:before {
+    content: "Intervenant"
+}
+.titleEpreuve {
+    text-align: center;
+}
+
+@media screen and (max-width: 978px) {
+    nav {
+        width:900px;
+    }
+    article {
+        width: 900px;
+    }
+    .welcome { 
+        width: 900px;
+    }
+    .footer {
+        width: 900px;
+    }
+    .onglet {
+        width: 299px;
+    }
+    .ongletDrop {
+        width: 299px;
+    }
+    .ongletDrop a {
+        width: 299px;
+    }
+
+}
+@media screen and (max-width: 912px) {
+    nav {
+        width:800px;
+    }
+    article {
+        width: 800px;
+    }
+    .welcome { 
+        width: 800px;
+    }
+    .footer {
+        width: 800px;
+    }
+    .onglet {
+        width: 266px;
+    }
+    .ongletDrop {
+        width: 266px;
+    }
+    .ongletDrop a {
+        width: 266px;
+    }
+}
+@media screen and (max-width: 817px) {
+    nav {
+        width:600px;
+    }
+    article {
+        width: 600px;
+    }
+    .welcome { 
+        width: 600px;
+    }
+    .footer {
+        width: 600px;
+    }
+    .onglet {
+        width: 199px;
+    }
+    .ongletDrop a{
+        width: 199px;
+    }
+    .ongletDrop {
+        width: 199px;
+    }
+}
+@media screen and (max-width: 621px) {
+    nav {
+        width:500px;
+    }
+    article {
+        width:500px;
+    }
+    .welcome { 
+        width:500px;
+    }
+    .footer {
+        width: 500px;
+    }
+    .onglet {
+        width: 166px;
+    }
+    .ongletDrop a{
+        width: 166px;
+    }
+    .ongletDrop {
+        width: 166px;
+    }
+    .span_class{
+        white-space: pre;
+    }
+    .span_epreuve {
+        white-space: pre;
+    }
+    .span_matiere {
+        white-space: pre;
+    }
+    #ensemble_select_epreuve {
+        margin-left: 65px;
+    }
+    .select_class {
+        width: 34%;
+    }
+    .select_matiere {
+        width: 34%;
+    }
+    .select_epreuve_liste {
+        width: 34%;
+    }
+}
+@media screen and (max-width: 529px) {
+    .cell_tab_cpt {
+        width: auto;
+        height: 250px;
+    }
+    .tabCompetence th {
+        width: 50px; /* carré de 50px */
+    }
+    nav {
+        width:400px;
+        margin:auto;
+        background-color: transparent;
+        border: none;
+    }
+    article {
+        width:400px;
+        margin-top: 200px;
+    }
+    .welcome {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .footer {
+        width: 400px;
+    }
+    .onglet {
+        width: 100%;
+        display: block;
+        background-color: #78c018; 
+        color: white;
+        font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+        border-right:  1px solid black;
+        border-left:  1px solid black;
+        border-top: 1px solid black;
+    }
+    #ongletBilan  {
+        border-bottom: 1px solid black;
+    }
+    .onglet a {
+        color: white;
+    }
+    #listeDesEpreuves a {
+        border-bottom: 1px solid black; 
+    }
+    #consulterMoyenne a {
+        border-bottom: 1px solid black; 
+    }
+    .ongletDrop {
+        width: 100%;
+    }
+    .ongletDrop a {
+        width: 100%;
+        border-bottom: none;
+    }
+    article {
+        margin-top: 100px;
+    }
+    .hr {
+        height:100%;
+        width:0px;
+        border:none;
+    }
+    .NonAcquisCpt:before{
+        display: none;
+    }
+    .EnCoursDacquisitionCpt:before {
+        display: none;
+    }
+    .PresqueAcquisCpt:before {
+        display: none;
+    }
+    .AcquisCpt:before {
+        display: none;
+    }
+    .NonAcquisCpt:after {
+        content: "NA";
+    }
+    .EnCoursDacquisitionCpt:after {
+        content: "ECA";
+    }
+    .PresqueAcquisCpt:after {
+        content: "PA";
+    }
+    .AcquisCpt:after {
+        content: "A";
+    }
+    .th_apprenant:before {
+        display: none;
+    }
+    .th_intervenant:before {
+        display: none;
+    }
+    .th_apprenant:after {
+        content: "A";
+    }
+    .th_intervenant:after {
+        content: "I";
+    }
+    #tab_compare_I_A {
+
+    }
+    .date1 { 
+        white-space: pre;
+    }
+    .class {
+        white-space: pre;
+    }
+    #class_select {
+        width: 40%;
+    }
+    #etudiant_select {
+        width: 40%;
+    }
+    #matiere_select {
+        width: 40%;
+    }
+    #epreuve_select {
+        width: 40%;
+    }
+    #ensemble_select_cpt {
+        padding-left: 40px; /* centre l'ensemble des balises pr la page cpt */
+    }
+    #epreuve {
+        white-space: pre;
+    }
+    #etudiant {
+        white-space: pre;
+    }
+    #matiere {
+        white-space: pre;
+    }
+    #span_date_auto_evaluer {
+        white-space: pre;
+    }
+    #span_matiere_auto_evaluer {
+        white-space: pre;
+    }
+    #span_epreuve_auto_evaluer {
+        white-space: pre;
+    }
+    #ensemble_span_auto_evaluer {
+        padding: 35px;
+    }
+    #matiere_select_auto_evaluer {
+        width: 44%;
+    }
+    #epreuve_select_auto_evaluer {
+        width: 44%;
+    }
+    #ensemble_select_epreuve {
+        margin-left: 35px;
+    }
+    .select_class {
+        width: 34%;
+    }
+    .select_matiere {
+        width: 34%;
+    }
+    .select_epreuve_liste {
+        width: 34%;
+    }
+    #td_vide_bilan {
+        width: 5%;
+    }
+    .th_apprenant {
+        width:15%;
+    }
+    .th_intervenant {
+        width: 15%;
+    }
+    td#vide_intervenant {
+        width: 10%;
+    }
+    .img_graph {
+        width: 400px;
+        height: auto;
+    }
+    .select_cpt_i {
+        width: 50%;
+    }
+    .span_preparer_epreuve_date {
+        white-space: pre; 
+        margin-left: -80px;
+    }
+    .span_preparer_epreuve_nom {
+        white-space: pre;
+      
+    }
+    .span_preparer_epreuve_classe {
+        white-space: pre;
+    }
+    .span_preparer_epreuve_matiere {
+        white-space: pre;
+    }
+    #ensemble_creer_epreuve {
+        margin-left: -80px;
+    }
+    .input_preparer {
+        width: 40%;
+    }
+}
+@media screen and (max-width: 420px) { 
+    nav {
+        width: 300px;
+    }
+    article {
+        width: 300px;
+    }
+    .footer {
+        width: 300px;
+    }
+    #ensemble_select_cpt {
+        padding: 1px;
+    }
+    #class_select {
+        width: 48.6%;
+    }
+    #etudiant_select {
+        width: 48.6%;
+    }
+    #matiere_select {
+        width: 48.6%;
+    }
+    #epreuve_select {
+        width: 48.6%;
+    }
+    #ensemble_select_epreuve {
+        margin-left: 3px;
+    }
+    .select_class {
+        width: 34%;
+    }
+    .select_matiere {
+        width: 34%;
+    }
+    .select_epreuve_liste {
+        width: 34%;
+    }
+    th#title_Epreuve {
+        border: 1px solid; 
+        border-radius: 8px 8px 0px 0px;
+    }
+    #liste_epreuve_tab {
+        width:auto;
+        height:20px;
+        overflow: scroll;
+    }
+    #search_epreuve {
+        width: 100px;
+    }
+    .span_matiere_bilan {
+        white-space: pre;
+    }
+    .span_epreuve_bilan {
+        white-space: pre;
+    }
+    #matiere_bilan {
+        width: 40%;
+    }
+    #epreuve_bilan {
+        width: 40%;
+    }
+    .img_graph {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 320px) { 
+    nav {
+        width: 200px;
+    }
+    article {
+        width: 200px;
+    }
+    .footer {
+        width: 200px;
+    }
+    #ensemble_select_cpt {
+        padding-right: 50px;
+    }
+    #class_select {
+        width: 35%;
+    }
+    #etudiant_select {
+        width: 35%;
+    }
+    #matiere_select {
+        width: 35%;
+    }
+    #epreuve_select {
+        width: 35%;
+    }
+    #dateCpt {
+        width: 35%;
+    }
+    .tabCompetence th {
+        padding: 0.1px;
+    }
+    #ensemble_span_auto_evaluer {
+        padding:1px;
+    }
+    #date_auto_evaluer {
+        width: 24%;
+    }
+    #matiere_select_auto_evaluer {
+        width: 24%;
+    }
+    #epreuve_select_auto_evaluer {
+        width: 24%;
+    }
+    #search_epreuve {
+        width: 40px;
+    }
+    #modifier_suppr:before {
+        display: none;
+    }
+    #modifier_suppr:after {
+        content: "M/S";
+    }
+    #ensemble_select_epreuve {
+        margin: 0;
+    }
+    #ensemble_bilan {
+        margin-left: -30px;
+    }
+    #search_bilan_cpt{
+        width: 100%;
+    }
+    .span_bilan_i {
+        white-space: pre;
+    }
+    #ensemble_bilan_i {
+        margin-left: -20px;
+    }
+    .select_bilan_i {
+        width: 35%;
+    }
+    .img_graph {
+        width: 200px;
+    }
+    #ensemble_select_a {
+        margin-left: -20px;
+    }
+    #ensemble_select_i {
+        margin-left: -50px;
+    }
+    #search_prepa {
+        width: 195px;
+    }
+    .tab_Prepa_Cpt th {
+        width: 20%;
+    }
+}

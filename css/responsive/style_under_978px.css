@@ -1,0 +1,439 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 31 mars 2016, 14:38:19
+    Author     : k.dintanavong
+*/
+
+body {
+    margin:0;
+    font-family: Helvetica, Arial;
+    background-image: url('../img/fond-site.jpg');
+    background-size: 100% 100%;
+}
+header {
+    height:55px;
+    width:100%;
+
+}
+.title {
+    width:100%;
+    height:40px;
+    padding-top:15px;
+    background-image: url('../img/Limoog.png');
+    background-repeat:no-repeat;
+    margin:auto;
+    color:white;
+    text-align:center;
+    font-size:20px;
+    font-family: Helvetica, Arial, sans-serif;
+    border: solid 1px;
+    background-position:85.5% 0%; 
+}
+nav{ 
+    margin:auto;
+    width:900px;
+    height:50px;
+    background-color:#78c018;
+    border-bottom:2px solid black;
+    border: solid 1px black;
+    border-radius: 10px 10px 0px 0px;
+}
+article {
+    margin:auto;
+    width:900px;
+    height:100%;
+    background: rgba(238,238, 238, 0.8);
+    padding-top:20px;
+}
+.onglet{
+    padding-top:15px;
+    height:35px;
+    width:150px;
+    float:left;
+    text-align:center;
+    color:black;
+    font-size:14px;
+    line-height:17px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+}
+.onglet:hover {
+    background-color:#69d034;
+}
+.onglet:hover .ongletDrop{
+    display:block;
+}
+.ongletDrop {
+    margin-left:-1px;
+    margin-top:18px;
+    height:100px;
+    width:150px;
+    text-align:center;
+    background-color:#78c018;
+    display:none;
+    position:relative;
+}
+.ongletDrop a {
+    text-decoration:none;
+    float:left;
+    padding-top:15px;
+    height:35px;
+    width:150px;
+    color:black;
+    font-size:14px;
+    line-height:17px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+    border:1px solid black;
+    background-color:#78c018;
+}
+.ongletDrop a:hover {
+    background-color:#69d034;
+}
+
+.hr{
+    height:100%;
+    width:0px;
+    border-right:solid 1px black;
+    float:left;
+}
+.welcome{
+    padding-top:25px;
+    margin:auto;
+    color:black;
+    font-size:30px;
+    font-family: Lucida Sans,Helvetica, Arial, sans-serif;
+    line-height:32px;
+    text-align:center;
+    border:1px solid black;
+    border-radius:5px;
+    width: 100%;
+    height: 50px;
+}
+div.bordure {
+    border-bottom:1px solid black;
+}
+a {
+    text-decoration:none;
+    color:black;
+    font-weight:normal;
+}
+.menu_eval a {
+    text-decoration:none;
+    color:white;
+    font-weight:normal;
+}
+table {
+    width:100%;
+    border-collapse: collapse;
+}
+.select_eleve_cpt {
+    width: 100%;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    outline : none;
+}
+.button_envoyer {
+    height: 5%;
+    width: auto;
+    text-align: center;
+}
+#discipline {
+    width: 100%;
+}   
+#competence {
+    width: 100%;
+}
+input[type=radio] {
+    width: 100%;
+}
+#date {
+    float: right;
+    text-align: center;
+}
+.select_epreuve {
+    width: 100%;
+}
+.menu_bilan {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 2px;
+}
+#tableau {
+    word-spacing: 20px;
+}
+#actualiser {
+    float: right;
+}
+th 
+{
+    background-color:#1ABC9C;
+    color: white;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    font-family: Lucida Sans;
+}
+
+td 
+{
+    text-align: center;
+    border: 1px solid #ccc;
+}
+table tr:nth-child(odd) td
+{
+    background-color: whitesmoke;
+}
+.enregistrer {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    width: 15%;
+    height: 4%;
+    outline:0; 
+}
+.enregistrer:hover{
+    color: #aaa;
+    background: black;
+    outline:0; 
+}
+.supprimer {
+    font-family: Arial,sans-serif;
+    text-align: center;
+    font-size: 15px;
+    color: white;
+    background: black;
+    border-radius: 8px;
+    width: 15%;
+    height: 4%;
+    outline:0; 
+}
+.supprimer:hover{
+    color: #aaa;
+    background: black;
+    outline:0; 
+}
+.form_txt {
+    text-align: center;
+}
+label {
+    border-radius: 5px;
+}
+#footer {
+    border-radius: 8px;
+    text-align: center;
+    border-width:1px;
+    border-style:solid;
+    border-color:black;
+    background: black;
+    color: white;
+}
+.date_form1 {
+    position: relative;
+    left: 40%;
+}
+.epreuve {
+    position: relative;
+    left: 30%;
+}
+.classe {
+    position: relative;
+    left: 38.1%;
+}
+.matiere {
+    position: relative;
+    left: 37.5%;
+}
+.cpt {
+    position: relative;
+    left: 32.5%;
+}
+#date_form {
+    width: 18.5%;
+}
+.classe_select {
+    width: 18.8%;
+}
+.matiere_s {
+    width: 19%;
+}
+.competences_s {
+    width: 19.1%;
+}
+#iId {
+    float: right;
+}
+.select_class_cpt {
+    width:100%;
+}
+#search_cpt {
+    float: right;
+}
+#cpt {
+    text-align: center;
+}
+#liste_epreuve_tab th {
+    width: 100%;
+    height: 50px;
+}
+#liste_epreuve_tab td {
+    width:20%;
+}
+#search_epreuve {
+    text-align: center;
+}
+.liste_epreuve {
+    text-align: center;
+}
+.img_epreuve {
+    text-align: center;
+}
+#cell_search {
+    height: 35px;
+}
+#tab_intervenant td{
+    width: 90%;
+    text-align: left; 
+}
+#tab_apprenant td{
+    width: 90%;
+    text-align: left;
+}
+.tab_inter_pos {
+    float:left;
+    width:475px;
+    height:200px;   
+}
+.tab_inter_pos_I {
+    float:left;
+    width:475px;
+    height:200px;
+    padding-top: 21px;
+
+}
+.tab_appr_pos_I {
+    float:left;
+    width:475px;
+    height:200px;
+    margin-left:10px;
+    margin-top: 21px;
+}
+.tab_appr_pos {
+    float:left;
+    width:475px;
+    height:200px;
+    margin-left:10px;
+}
+.espacer {
+    height: 5%;
+}
+#cpt_tab_moy {
+    text-align: right;
+}
+.tabCompetenceMoy {
+    width: 70%;
+}
+.cell_note {
+    width: 10%;
+}
+.tab_Prepa_Cpt th {
+    width: 50%;
+}
+.tab_Prepa_Fill td {
+    width: 10%;
+}
+#icon_prepa {
+    float: right;
+}
+#bouton_tab_prepa {
+    text-align: center;
+}
+.cell_tab_cpt {
+    width: auto;
+    height: 500px;
+    overflow: scroll;
+}
+.checkbox_right {
+    float: right;
+}
+.menu_eval {
+    border: 1px solid #696;
+    text-align: center; 
+    width: 100%;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #77CDAA;
+    color: black;
+}
+.footer {
+    margin: auto;
+    width:960px;
+    border: solid 1px black;
+    border-radius: 4px;
+    text-align: center;
+    font-family: Lucida Sans, Helvetica, Arial;
+    background: #77CDAA;
+}
+.menu-vertical { 
+    margin: auto;
+    width: auto;
+    list-style: none;
+}
+.href_menu_epreuve, .href_menu_epreuve a {
+    display: block;
+}
+.href_menu_epreuve a {
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+    -webkit-transition: all .3s;
+    -moz-transition: all .3s; 
+    transition: all .3s;
+    margin: auto;
+}
+.href_menu_epreuve a:hover {
+    background: #78c018;
+    color: white;
+    padding-left: 30px; /* décalage du contenu de 10px vers la droite (30-20 = 10) */
+}
+select {
+    border: 1px solid black;
+    border-radius: 2px 2px 0px 0px;
+    outline-style: none;
+}
+input[type="search"] {
+    outline-style: none;
+}
+#fieldset_moy {
+    font-family: Lucida Sans;
+    font-size: 10px;
+}
+#tabComparaisonApprenant th {
+    font-size: 15px;
+    font-family: Arial;
+}
+#total_tab th {
+    font-size: 15px;
+    font-family: Arial;
+}
+input[type="submit"] {
+    border: 1px solid #ccc;
+    outline-style: none;
+    border-radius: 28px;
+    padding: 10px;
+    font-family: Lucida Sans, Helvetica, Arial;
+    background: #1ABC9C;
+    color: whitesmoke;
+}
+input[type="submit"]:hover {
+    background: #69d034;
+    cursor:pointer;
+}
+#NonAcquis_Th, #EnCoursDacquisition_Th, #PresqueAcquis_Th, #Acquis_Th {
+    width: 20%;
+}

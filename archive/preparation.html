@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/fichier.js"></script>
+		<link rel="stylesheet" href="/resources/demos/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="title">LIMOOG</div>
+        </header>
+        <nav>
+            <a href="index.html">
+                <div class="onglet">Accueil</div>
+            </a>
+            <div class="hr"></div>
+            <div class="onglet">
+                <a href="epreuve.html">Epreuve</a>
+                <div class="ongletDrop">
+                    <a href="competence.html">Evaluer</a>
+                    <a href="preparation.html">Créer Epreuve</a>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <a href=""><div class="onglet">Bilan</div></a>
+        </nav>
+        <article>
+            <button type="button" id="actualiser" OnClick="javascript:window.location.reload()" value="Actualiser"><img src="img/refresh.png" style="width: 20px; height: 20px;" alt="refresh"></button>
+            <div style="height: 5%"></div>
+            <center>Pr&eacute;paration des &eacute;valuations</center>
+            <div style="height: 2%;"></div>
+            <center>
+                <input type="button" class="enregistrer" onclick="ajouterLigneDiscipline();" value="Enregistrer"/>
+                <input type="button" class="supprimer" onclick="supprimer(-1);" value="Supprimer"/>
+            </center>
+            <div style="height: 2%;"></div>      
+            <select id="discipline">
+                <option>Maths</option>
+                <option>Français</option>
+                <option>Informatique</option>
+            </select>
+            <div style="height: 2%"></div>
+            <table id="tableau" border="1" style="border-collapse: collapse;"> 
+                <tr>
+                    <th>Mati&egrave;res</th>
+                </tr>
+            </table>
+            <div style="height: 2%"></div>
+            <center>
+                <input type="button" class="enregistrer" onclick="ajouterLigneCompetence();" value="Enregistrer"/>
+                <input type="button" class="supprimer" onclick="supprimerCompetence(-1);" value="Supprimer"/>
+            </center>
+            <div style="height: 2%;"></div>
+            <select id="competence">
+                <option>C1</option>
+                <option>C2</option>
+                <option>C3</option>
+            </select>
+            <div style="height: 2%"></div>
+            <table id="tableau2" border="1" style="border-collapse: collapse;" >
+                <tr>
+                    <th>Comp&eacute;tences</th>
+                </tr>
+            </table>
+            <div style="height: 2%"></div>
+            <center>
+                <input type="button" value="Envoyer"/>
+            </center>
+        </article>
+    </body>
+</html>

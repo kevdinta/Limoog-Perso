@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Auto-évaluation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/js.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="hTitle">Limoog</div>
+        </header>
+        <ul id="menu_horizontal">
+            <li class="bouton">
+                <a href="#" >
+                    <img src="img/house.png" alt="accueil" width="30" height="30"/>
+                    Accueil
+                </a>
+
+            </li>
+            <li class="bouton">
+                <a href="#">
+                    <img src="img/book.png" alt="auto-evaluation" width="30" height="30"/>
+                    Auto-&eacute;valuation
+                </a>
+            </li>
+            <li class="bouton">
+                <a href="#">
+                    <img src="img/bilan.png" alt="bilan" width="30" height="30"/>
+                    Bilan
+                </a>
+            </li>
+            <li class="bouton">
+                <a href="#">
+                    <img src="img/preparation-evaluation.png" alt="preparation-evaluation" width="30" height="30"/>
+                    Pr&eacute;paration des &eacute;valuations
+                </a>
+            </li>
+            <li class="bouton">
+                <a href="#">
+                    <img src="img/evaluation.png" alt="evaluation" width="30" height="30"/>
+                    &Eacute;valuation
+                </a>
+            </li>
+        </ul>
+
+        <table border="1" cellpadding="15" width="100%" class="tabChapitre">
+            <caption>Auto-&eacute;valuation des comp&eacute;tences</caption>
+            <tr>
+                <td class="chapitre" colspan="3" align="center">
+                    <div class="select-styled">
+                        <select> 
+                            <option value="chapitre1">
+                                Chapitre 1
+                            </option>
+                            <option value="chapitre2">
+                                Chapitre 2
+                            </option>
+                            <option value="chapitre3">
+                                Chapitre 3
+                            </option>
+                        </select>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>Etudiants</td>
+                <td>Comp&eacute;tence 1</td>
+                <td>Comp&eacute;tence 2</td>
+            </tr>
+            <tr>
+                <td>E1</td>
+                <td>
+                    <input class="range_skill" type="range" id="range_valueE1" value="1" min="1" max="5" step="1" oninput="outputUpdate(value)">
+                    <output for="range_valueE1" id="affichage_noteE1">1</output>
+                </td>
+                <td>
+                    <input class="range_skill" type="range" id="range_valueE2" value="1" min="1" max="5" step="1" oninput="outputUpdate(value)">
+                    <output for="range_valueE2" id="affichage_noteE2">1</output>
+                </td>
+            </tr>
+            <tr>
+                <td>E2</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E3</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E4</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E5</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E6</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E7</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E8</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E9</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E10</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E11</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E12</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E13</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+            <tr>
+                <td>E14</td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+                <td><input class="range_skill" type="range" value="1" min="1" max="5" step="1"></td>
+            </tr>
+        </table>      
+    <center>
+        <a href="#" onclick="javascript:history.forward();" class="btn" >></a>
+    </center>      
+</body>
+</html>

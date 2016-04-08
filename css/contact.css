@@ -1,0 +1,78 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 15 févr. 2016, 14:49:21
+    Author     : k.dintanavong
+*/
+
+
+
+#text_Nom {
+  position: relative;
+  left: 35%;
+}
+#cNom {
+  position:relative;
+  left: 35%;
+}
+#text_Prenom {
+    position: relative;
+    left: 32.5%;
+}
+#cPrenom {
+    position: relative;
+    left: 32.5%;
+}
+#text_Adresse {
+    position: relative;
+    left: 32.1%;
+}
+#cAdresse {
+    position: relative;
+    left: 32.1%;
+    width: 18.8%;
+}
+#text_CP {
+    position: relative;
+    left: 35.9%;
+}
+#cCP {
+    position: relative;
+    left: 35.9%;
+    width: 18.8%;
+}
+#text_Ville {
+    position: relative;
+    left: 35%;
+}
+#cVille {
+    position: relative;
+    left: 35%;
+}
+#text_Tel {
+    position: relative;
+    left: 35.8%;
+}
+#cTel {
+    position: relative;
+    left: 35.8%;
+}
+#text_Portable {
+    position: relative;
+    left: 31.7%;
+}
+#cPortable {
+    position: relative;
+    left: 31.7%;
+}
+#text_Mel {
+    position: relative;
+    left: 35.2%;
+}
+#cMel {
+    position: relative;
+    left: 35.2%;
+}

@@ -1,0 +1,301 @@
+<html>
+    <head>
+        <title>Test</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="title">LIMOOG</div>
+        </header>
+        <nav>
+            <a href="index.html">
+                <div class="onglet">Accueil</div>
+            </a>
+            <div class="hr"></div>
+            <div class="onglet">
+                <a href="epreuve.html">Epreuve</a>
+                <div class="ongletDrop">
+                    <a href="competence.html">Evaluer</a>
+                    <a href="preparation_epreuve.php">Créer Epreuve</a>
+                </div>
+            </div>
+            <div class="hr"></div>
+            <a href=""><div class="onglet">Bilan</div></a>
+        </nav>
+        <article>
+            <form action="bilan.php" method="POST" > 
+                <input id="date" type="date"/>
+                <div style="height: 5%"></div>
+				<label id="txt_name_epreuve">Nom de l'epreuve :</label>
+				<input type="text" id="name_epreuve">
+				 <div style="height: 5%"></div>
+				 Ou sélectionner une épreuve si vous l'avez créée
+                <select class="select_epreuve" name="select_epreuve">
+					<option value=""></option>
+                    <option>EPREUVE 1</option>
+                    <option>EPREUVE 2</option>
+                    <option>EPREUVE 3</option>
+                    <option>EPREUVE 4</option>
+                </select>
+                <div style="height: 5%;"></div>
+				<div style="margin-bottom: 10px;"><center>Classe :</center></div>
+				<select class="select_class_cpt">
+					<option value=""></option>
+					<option>1SN</option>
+					<option>2SN</option>
+				</select>
+				  <div style="height: 5%;"></div>
+                <div style="text-align: center;margin-bottom: 10px;">Liste des etudiants :</div>
+                <select class="select_eleve_cpt" name="select_eleve_cpt">
+					<option value=""></option>
+                    <option>Etudiant 1</option>
+                    <option>Etudiant 2</option>
+                    <option>Etudiant 3</option>
+                    <option>Etudiant 4</option>
+                    <option>Etudiant 5</option>
+                    <option>Etudiant 6</option>
+                </select>
+                <table border="1" style="text-align: center;">
+                    <tr>
+                        <th></th>
+                        <th>Non acquis</th>
+                        <th>En cours d'acquisition</th>
+                        <th>Presque acquis</th>
+                        <th>Acquis</th>
+                    </tr>
+
+                    <tr>
+                        <td>Competence 1</td>
+                        <td>                  
+                            <input type="radio" name="c1" value="NA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c1" value="ECA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c1" value="PA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c1" value="A">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Competence 2</td>
+                        <td>
+                            <input type="radio" name="c2" value="NA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c2" value="ECA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c2" value="PA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c2" value="A">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Competence 3</td>
+                        <td>
+                            <input type="radio" name="c3" value="NA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c3" value="ECA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c3" value="PA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c3" value="A">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Competence 4</td>
+                        <td>
+                            <input type="radio" name="c4" value="NA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c4" value="ECA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c4" value="PA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c4" value="A">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 5</td>
+                        <td>
+                            <input type="radio" name="c5" value="NA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c5" value="ECA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c5" value="PA">
+                        </td>
+                        <td>
+                            <input type="radio" name="c5" value="A">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 6</td>
+                        <td>
+                            <input type="radio" name="c6">
+                        </td>
+                        <td>
+                            <input type="radio" name="c6">
+                        </td>
+                        <td>
+                            <input type="radio" name="c6">
+                        </td>
+                        <td>
+                            <input type="radio" name="c6">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 7</td>
+                        <td>
+                            <input type="radio" name="c7">
+                        </td>
+                        <td>
+                            <input type="radio" name="c7">
+                        </td>
+                        <td>
+                            <input type="radio" name="c7">
+                        </td>
+                        <td>
+                            <input type="radio" name="c7">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 8</td>
+                        <td>
+                            <input type="radio" name="c8">
+                        </td>
+                        <td>
+                            <input type="radio" name="c8">
+                        </td>
+                        <td>
+                            <input type="radio" name="c8">
+                        </td>
+                        <td>
+                            <input type="radio" name="c8">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 9</td>
+                        <td>
+                            <input type="radio" name="c9">
+                        </td>
+                        <td>
+                            <input type="radio" name="c9">
+                        </td>
+                        <td>
+                            <input type="radio" name="c9">
+                        </td>
+                        <td>
+                            <input type="radio" name="c9">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 10</td>
+                        <td>
+                            <input type="radio" name="c10">
+                        </td>
+                        <td>
+                            <input type="radio" name="c10">
+                        </td>
+                        <td>
+                            <input type="radio" name="c10">
+                        </td>
+                        <td>
+                            <input type="radio" name="c10">
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>Competence 11</td>
+                        <td>
+                            <input type="radio" name="c11">
+                        </td>
+                        <td>
+                            <input type="radio" name="c11">
+                        </td>
+                        <td>
+                            <input type="radio" name="c11">
+                        </td>
+                        <td>
+                            <input type="radio" name="c11">
+                        </td>
+
+                    </tr>
+                </table>
+                <div style="margin-bottom: 50px"></div>
+                <table  cellpadding="8" border='1' style="border-collapse: collapse;">
+                    <tr>
+                        <th></th>
+                        <th>Non acquis</th>
+                        <th>En cours d'acquisition</th>
+                        <th>Presque acquis</th>
+                        <th>Acquis</th>
+                    </tr>
+                    <tr class="radio-tuto">
+                        <td>
+                            Competence 1
+                        </td>
+                        <td class="d">
+                            <input type="radio" id="t1" name="t" value="NA" />
+                            <label id="4" class="label-radio" for="t1">D</label>
+                        </td>
+                        <td class="c">
+                            <input type="radio" id="t2" name="t" value="ECA" />
+                            <label id="3" class="label-radio" for="t2">C</label>
+                        </td>
+                        <td class="b">
+                            <input type="radio" id="t3" name="t" value="PA" />
+                            <label id="2" class="label-radio" for="t3">B</label>
+                        </td>
+                        <td class="a">
+                            <input type="radio" id="t4" name="t" value="A" />
+                            <label id="1" class="label-radio" for="t4">A</label>
+                        </td>
+                    </tr>
+                    <tr class='radio-tuto'>
+                        <td>
+                            Competence 2
+                        </td>
+                        <td class="d">
+                            <input type="radio" id="t5" name="t2" />
+                            <label class="label-radio" for="t5">D</label>
+                        </td>
+                        <td class="c">
+                            <input type="radio" id="t6" name="t2" />
+                            <label class="label-radio" for="t6">C</label>
+                        </td>
+                        <td class="b">
+                            <input type="radio" id="t7" name="t2" />
+                            <label class="label-radio" for="t7">B</label>
+                        </td>
+                        <td class="a">
+                            <input type="radio" id="t8" name="t2" />
+                            <label class="label-radio" for="t8">A</label>
+                        </td>
+                    </tr>
+                </table>
+                <div style='height: 2%;'></div>
+                <center>
+                    <input type="submit" value="Envoyer">
+                </center>
+            </form>
+        </article>
+    </body>
+</html>
