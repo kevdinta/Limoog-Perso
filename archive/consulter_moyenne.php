@@ -3,31 +3,29 @@
         <title>Test</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta name="viewport" content="width=device-width" />
     </head>
     <body>
         <header>
-            <div class="title"></div>
+            <div class="title">LIMOOG</div>
         </header>
-        <div style="height: 2%;"></div>
         <nav>
             <a href="index.html"><div class="onglet">Accueil</div></a>
             <div class="hr"></div>
             <div class="onglet">
                 <a href="#">Epreuve</a>
-                <div class="ongletDrop" id="listeDesEpreuves">
+                <div class="ongletDrop">
                     <a href="epreuve.html">Evaluer</a>
                     <a href="liste_epreuve.php">Liste des épreuves</a>
                 </div>
             </div>
             <div class="hr"></div>  
-            <div class="onglet" id="ongletBilan"> <a href="">Bilan</a>
-                <div class="ongletDrop" id="consulterMoyenne">
+            <div class="onglet"> <a href="">Bilan</a>
+                <div class="ongletDrop">
                     <a href="bilan_apprenant.php">Bilan apprenant</a>
                     <a href="bilan_intervenant.php">Bilan intervenant</a>
                     <a href="consulter_moyenne.php">Consulter sa moyenne</a>
-                </div>
-            </div>
+                </div></div>
+            <div class="hr"></div>
         </nav>
         <article>
             <span>Matiere

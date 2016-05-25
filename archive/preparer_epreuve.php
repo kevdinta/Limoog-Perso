@@ -3,31 +3,31 @@
         <title>Test</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width" />
-        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css"  media="screen and (min-width: 985px)"  href="css/style.css">
+        <link rel="stylesheet" type="text/css"  media="screen and (max-width: 360px)"  href="css/test.css">
     </head>
     <body>
         <header>
-            <div class="title"></div>
+            <div class="title">LIMOOG</div>
         </header>
-        <div style="height: 2%;"></div>
         <nav>
-            <a href="index.html"><div class="onglet">Accueil</div></a>
+          <a href="index.html"><div class="onglet">Accueil</div></a>
             <div class="hr"></div>
             <div class="onglet">
                 <a href="#">Epreuve</a>
-                <div class="ongletDrop" id="listeDesEpreuves">
+                <div class="ongletDrop">
                     <a href="epreuve.html">Evaluer</a>
                     <a href="liste_epreuve.php">Liste des épreuves</a>
                 </div>
             </div>
             <div class="hr"></div>  
-            <div class="onglet" id="ongletBilan"> <a href="">Bilan</a>
-                <div class="ongletDrop" id="consulterMoyenne">
+            <div class="onglet"> <a href="">Bilan</a>
+                <div class="ongletDrop">
                     <a href="bilan_apprenant.php">Bilan apprenant</a>
                     <a href="bilan_intervenant.php">Bilan intervenant</a>
-                    <a href="moyenne.php">Consulter moyenne</a>
-                </div>
-            </div>
+                    <a href="consulter_moyenne.php">Consulter sa moyenne</a>
+                </div></div>
+            <div class="hr"></div>
         </nav>
         <article>
             <label style="float: right;">Prof_XXX</label>
@@ -62,10 +62,10 @@
                     <table class="tab_Prepa_Cpt" border="1">
                         <tr>
                             <th style="height: 50px;">Liste des compétences
-                                <div class="checkbox_right">
-                                    <input type="search" placeholder="Rechercher" style="width: 300px;">
-                                </div>
-                            </th>
+                        <div class="checkbox_right">
+                            <input type="search" placeholder="Rechercher" style="width: 300px;">
+                        </div>
+                        </th>
 
                         </tr>
                         <tr>
@@ -105,7 +105,7 @@
                 </div>
                 <div class="espacer"></div>
                 <div id="bouton_tab_prepa">   
-                    <input type="button" value="Modifier epreuve">
+                    <input type="button" value="Creer epreuve">
                 </div>
             </fieldset>
         </article>

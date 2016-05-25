@@ -4,10 +4,10 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <script type="text/javascript" src="js/js_cpt.js"></script>
-        <meta name="viewport" content="width=device-width" />
     </head>
     <body>
         <header>
+            <div style="height: 5%;"></div>
             <div class="title"></div>
         </header>
         <div style="height: 2%;"></div>
@@ -16,60 +16,53 @@
             <div class="hr"></div>
             <div class="onglet">
                 <a href="#">Epreuve</a>
-                <div class="ongletDrop" id="listeDesEpreuves">
+                <div class="ongletDrop">
                     <a href="epreuve.html">Evaluer</a>
                     <a href="liste_epreuve.php">Liste des épreuves</a>
                 </div>
             </div>
             <div class="hr"></div>  
-            <div class="onglet" id="ongletBilan"> <a href="">Bilan</a>
-                <div class="ongletDrop" id="consulterMoyenne">
+            <div class="onglet"> <a href="">Bilan</a>
+                <div class="ongletDrop">
                     <a href="bilan_apprenant.php">Bilan apprenant</a>
                     <a href="bilan_intervenant.php">Bilan intervenant</a>
-                    <a href="moyenne.php">Consulter moyenne</a>
-                </div>
-            </div>
+                    <a href="consulter_moyenne.php">Consulter sa moyenne</a>
+                </div></div>
+            <div class="hr"></div>
         </nav>
         <article>
-            <div id="ensemble_select_a">
-                <span class="span_matiere">
+            <div id="ensemble_span_auto_evaluer">
+                <span id="span_date_auto_evaluer">
+                    Date
+                    <input id="date_auto_evaluer" type="date">
+                </span>
+                <span id="span_matiere_auto_evaluer">
                     Matiere
-                    <select class="select_matiere">
+                    <select id="matiere_select_auto_evaluer">
                         <option value=""></option>
                         <option>Mathematiques</option>
                         <option>Français</option>
                         <option>Physique</option>
                     </select>
                 </span>
-                <span class="span_epreuve">
+                <span id="span_epreuve_auto_evaluer">
                     Epreuve
-                    <select class="select_matiere">
+                    <select id="epreuve_select_auto_evaluer">
                         <option value=""></option>
                         <option>Epreuve 1</option>
                         <option>Epreuve 2</option>
                         <option>Epreuve 3</option>
                         <option>Epreuve 4</option>
-                    </select>   
+                    </select>    
                 </span>
             </div>
             <p></p>
             <div class="cell_tab_cpt">
-                <table border="1" cellpadding="5" class="tabCompetence" ><!-- tr creer ligne -->
+                <table border="1" cellpadding="5" class="tabCompetence"><!-- tr creer ligne -->
+
                     <tr>
-                        <td colspan="6">
-                            <span class="span_trier">
-                                Trier par
-                                <select>
-                                    <option value=""></option>
-                                    <option>Ordre alphabétique</option>
-                                    <option>Note croissante</option>
-                                    <option>Note décroissante</option>
-                                    <option>Note manquante</option>
-                                </select>
-                            </span>
-                            <span class="span_trier">
-                                <input type="search" id="search_cpt" placeholder="Rechercher...">
-                            </span>
+                        <td colspan="5">
+                            <input type="search" id="search_cpt" placeholder="Rechercher...">
                         </td>
                     </tr>
                     <tr>
@@ -79,8 +72,7 @@
                         <th class="PresqueAcquisCpt"></th>
                         <th class="AcquisCpt"></th>
                     </tr>
-                    <tr> 
-
+                    <tr>    
                         <th>Competence 1</th>
                         <td  onclick="changeColorRouge(this)" id="cpt_1_NA"> </td>
                         <td  onclick="changeColorOrange(this)" id="cpt_1_ECA"></td>
@@ -101,7 +93,7 @@
                         <td></td>
                         <td></td>
                     </tr>
-                    <tr>   
+                    <tr>    
                         <th>Competence 4</th>
                         <td></td>
                         <td></td>
@@ -118,11 +110,8 @@
                 </table>
             </div>
             <p></p>
-            <div style="text-align: center;">           
-                <img class="img_graph" src="img/Capture.png" alt="GraphiqueApprenant"/>
-            </div>
+            <div id="cpt"> <input type="submit" value="Envoyer" id="envoyer_cpt"> </div>
         </article>
     </body>
 </html>
-
 

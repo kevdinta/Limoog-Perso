@@ -39,3 +39,11 @@ function changeColorVert(elm) {
         el.backgroundColor = '';
     }
 }
+function Supprimer() {
+    if (confirm("Supprimer les éléments selectionnés ?")) {
+        alert("Elements supprimés");
+    }
+    else {
+        alert("Elements conservés");
+    }
+}

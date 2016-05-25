@@ -3,11 +3,11 @@
         <title>Test</title>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta name="viewport" content="width=device-width" />
         <script type="text/javascript" src="js/js_cpt.js"></script>
     </head>
     <body>
         <header>
+            <div style="height: 5%;"></div>
             <div class="title"></div>
         </header>
         <div style="height: 2%;"></div>
@@ -16,25 +16,25 @@
             <div class="hr"></div>
             <div class="onglet">
                 <a href="#">Epreuve</a>
-                <div class="ongletDrop" id="listeDesEpreuves">
+                <div class="ongletDrop">
                     <a href="epreuve.html">Evaluer</a>
                     <a href="liste_epreuve.php">Liste des épreuves</a>
                 </div>
             </div>
             <div class="hr"></div>  
-            <div class="onglet" id="ongletBilan"> <a href="">Bilan</a>
-                <div class="ongletDrop" id="consulterMoyenne">
+            <div class="onglet" id="ongletBil"> <a href="">Bilan</a>
+                <div class="ongletDrop">
                     <a href="bilan_apprenant.php">Bilan apprenant</a>
                     <a href="bilan_intervenant.php">Bilan intervenant</a>
-                    <a href="moyenne.php">Consulter moyenne</a>
-                </div>
-            </div>
+                    <a id="tes" href="consulter_moyenne.php">Consulter sa moyenne</a>
+                </div></div>
+            <div class="hr"></div>
         </nav>
         <article>
             <div id="ensemble_select_cpt">
                 <span class="date1" id="date1">
                     Date
-                    <input type="date" id="dateCpt">
+                    <input type="date">
                 </span>
                 <span class="class" id="class">
                     Classe
